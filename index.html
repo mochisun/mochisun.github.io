@@ -25,8 +25,8 @@
             color: #666;
         }
         section {
-            margin-bottom: 4rem;
-            max-width: 800px;
+            margin-bottom: 2rem;
+            max-width: 1000px;
             margin-left: auto;
             margin-right: auto;
         }
@@ -36,13 +36,13 @@
         }
         section p {
             color: #555;
-            margin-bottom: 1rem;
+            margin-bottom: 2rem;
         }
         .projects{
             display: grid;
-            gap: 2rem;
-            max-width: 800px;
+            max-width: 1000px;
             margin: 0 auto;
+            margin-bottom: 2rem;
         }
         .project{
             border: 1px solid #ddd;
@@ -101,10 +101,11 @@
 
     <section class="art">
         <h2>Artwork</h2>
-        <p>I have been drawing digitally since 2015 and love to create!</p>
+        <p>I have been drawing digitally since 2015 (<span id="years-art">10</span> years) and love to create!</p>
         <p>Tools of the trade: iPad mini 5, Apple pencil, Procreate (Application)</p>
-        <p>Creatures, Landscapes, Portraits and Studies. I dabble in all forms of digital 2d (I even animate sometimes). Currently, I am participating in a challenge to draw at least one thing EVERY day. I post primarily on Instagram</p>
-        <p>Current Daily Drawing (DD) Counter: 390</p>
+        <p>Creatures, Landscapes, Portraits and Studies; I dabble in all forms of digital 2d (I even animate sometimes). 
+            Currently, I am participating in a challenge to draw at least one thing EVERY day. I post primarily on Instagram</p>
+        <p>Current Daily Drawing (DD) Counter: <span id="DD-count">390</span></p>
         <div class="image-gallery">
             <img src="images/snake_fangs.png" alt="art1">
             <img src="images/blossoming.jpeg" alt="art2">
@@ -122,7 +123,10 @@
     <!--section for coding-->
     <section class="projects">
         <h2>Coding Projects</h2>
-        <p> ajdijofij </p>
+        <p>I found a love for coding when I took an electrical engineering programming course in C, freshman year of college. I switched majors and never looked back!</p>
+        <p>Graduated in 2024 with a Bachelor's in Computer Science, I now code on the side while I apply to Software jobs in a tough market ( ͡° ͜ʖ ͡°)</p>
+        <p>Languages: C/C++, Java, Javascript(JS), Python, SQL, HTML5, Assembly (<-tedious)</p>
+        <p>Capabilities: Bash/Powershell Scripting, Unix Environments, Debugging, Data Structures, Ubuntu, Angular, REACT</p>
         <div class="project">
             <h2>Family Recipes</h2>
             <p>A showcase of awesome recipes pulled from a flashdrive that my mom gifted me a while back</p>
@@ -132,18 +136,37 @@
 
     <section class="mechanic">
         <h2>Mechanic Experience</h2>
-        <p>sijosdijf</p>
+        <p>I swore in to the US Air force in 2016 (￣^￣)ゞ and began my handyman journey as an Avionics Technician on the A10 Warthog. 
+            Been in for <span id="years-AF">9</span> years now in the Reserves(couple years active) and recently swapped over to the F-35A in 2024. 
+            Post graduation I was lucky enough to land a job as a Product Support Engineer for ASM and have been working with the Semiconductor industry since. 
+            Turning wrenches isn't my favorite hobby, but it's great skill to have learned over time (especially when the check engine light comes on ( ⚆ _ ⚆ ))</p>
+        <p>Skills: Maintenance, Installation, LOTO electrical safety, Troubleshooting, Electrical Schematics/Wiring Diagrams</p>
+        <p>Certifications: Security Clearance, CPR, Electronics Principles</p>
         <div class="image-gallery">
             <img src="images/A-10C.jpg" alt="A-10">
             <img src="images/PEALD DCM.jpg" alt="PEALD DCM">
             <img src="images/F-35A.jpg" alt="F-35">
-            
-        </div>
+        </div> <br/>
+        <p>Component Knowledge (So many tools!)</p>
+        <!--WRITE SCRIPT TO READ IN COMPONENTS!!!-->
+        <ul>
+            <li></li>
+        </ul>
     </section>
 
 
     <footer>
         &copy; 2025 Alberto Sanchez
     </footer>
+
+    <!--script for doing date calculations-->
+    <script>
+        //for my art experience
+        const startYearArt = 2015;
+        const startYearAirForce = 2016;
+        const currentDate = new Date().getDate
+        document.getElementById('year')
+    </script>
+
 </body>
 </html>

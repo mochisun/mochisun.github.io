@@ -16,9 +16,27 @@
             text-align: center;
             margin-bottom: 3rem;
         }
+        h1 {
+            margin: 0;
+            font-size: 2rem;
+        }
         p {
             margin: 0.5rem 0 0;
             color: #666;
+        }
+        section {
+            margin-bottom: 4rem;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        section h2{
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+        section p {
+            color: #555;
+            margin-bottom: 1rem;
         }
         .projects{
             display: grid;
@@ -49,21 +67,81 @@
             font-size: 0.875rem;
             color: #aaa;
         }
+        .profile-image {
+            width: 120px;
+            height: 120px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 2px solid #ccc;
+            display: block;
+            margin: 0 auto 1rem;
+        }
+        .image-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            justify-content: center;
+        }
+        .image-gallery img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+        }
+        
     </style>
 </head>
 <body>
     <header>
+        <img src="images/selfie.jpg" class="profile-image">
         <h1>Mochisun</h1>
-        <p>Developer | Artist | Mechanic</p>
+        <p>Artist | Developer | Mechanic</p>
     </header>
 
+    <section class="art">
+        <h2>Artwork</h2>
+        <p>I have been drawing digitally since 2015 and love to create!</p>
+        <p>Tools of the trade: iPad mini 5, Apple pencil, Procreate (Application)</p>
+        <p>Creatures, Landscapes, Portraits and Studies. I dabble in all forms of digital 2d (I even animate sometimes). Currently, I am participating in a challenge to draw at least one thing EVERY day. I post primarily on Instagram</p>
+        <p>Current Daily Drawing (DD) Counter: 390</p>
+        <div class="image-gallery">
+            <img src="images/snake_fangs.png" alt="art1">
+            <img src="images/blossoming.jpeg" alt="art2">
+            <img src="images/lovely_fish.jpeg" alt="art3">
+            <img src="images/honest_cat.jpeg" alt="art4">
+            <img src="images/hello_stan.jpeg" alt="art5">
+        </div>
+        <p>
+            Follow more of my art on:
+            <a href="https://instagram.com/mochisun" target="_blank">Instagram</a> |
+            <a href="https://youtube.com/mochisun" target="_blank">YouTube</a>
+        </p>
+    </section>
+
+    <!--section for coding-->
     <section class="projects">
+        <h2>Coding Projects</h2>
+        <p> ajdijofij </p>
         <div class="project">
             <h2>Family Recipes</h2>
             <p>A showcase of awesome recipes pulled from a flashdrive that my mom gifted me a while back</p>
             <a href="https://github.com/mochisun/FamilyRecipes" target="_blank">View on GitHub</a>
         </div>
     </section>
+
+    <section class="mechanic">
+        <h2>Mechanic Experience</h2>
+        <p>sijosdijf</p>
+        <div class="image-gallery">
+            <img src="images/A-10C.jpg" alt="A-10">
+            <img src="images/PEALD DCM.jpg" alt="PEALD DCM">
+            <img src="images/F-35A.jpg" alt="F-35">
+            
+        </div>
+    </section>
+
+
     <footer>
         &copy; 2025 Alberto Sanchez
     </footer>

@@ -1,0 +1,34 @@
+Semiconductor Tools:
+Helium Leak Detector
+Alum-a-Lift (raise/lower chemical Showerheads)
+Pneumatic Lift Pistons
+Generic Mechanical Tools (Torque wrenches, bits/sockets, wire cutters, etc.)
+Multimeter
+Digital Calipers (measure pin height)
+Laser Alignment Lids
+Micrometers (leveling/centering)
+Vacuum Pumps
+LOTO kits
+TLD (Toxic Leak Detector)
+
+Avionics Tools:
+Radar Test Equipment
+Fire Extinguisher
+Forklift
+Jammer Vehicle (to install targeting pods on pylons)
+Chaff/flare testers
+Safety wire pliers
+Borescope
+Fuel quantity test set 
+
+Component Knowledge:
+PLC (Programmable Logic controllers)
+Interlocks (Software/Hardware)
+Digital/Analog I/Os(inputs/outputs)
+Pressure transducers
+Differential pressure sensors
+Throttle valves
+Thermocouples
+Gas lines
+Pneumatic/Hydraulic operations
+Parts ordering/inventory

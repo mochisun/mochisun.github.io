@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mochisun | Portfolio</title>
+    <!--created my own favicon!-->
+    <link rel="icon" type="image/x-icon" href="favicon mochi.ico">
     <style>
         body {
             margin: 0;
@@ -99,6 +101,8 @@
         <p>Artist | Developer | Mechanic</p>
     </header>
 
+    <!--ADD GITHUB AND LINKED IN LINKS (INDEED?)-->
+
     <section class="art">
         <h2>Artwork</h2>
         <p>I have been drawing digitally since 2015 (<span id="years-art">10</span> years) and love to create!</p>
@@ -147,11 +151,9 @@
             <img src="images/PEALD DCM.jpg" alt="PEALD DCM">
             <img src="images/F-35A.jpg" alt="F-35">
         </div> <br/>
-        <p>Component Knowledge (So many tools!)</p>
-        <!--WRITE SCRIPT TO READ IN COMPONENTS!!!-->
-        <ul>
-            <li></li>
-        </ul>
+        <p>Component Knowledge/Operational Skills</p>
+        <!--list of all mechanical components I've picked up over the years-->
+        <div id="c"></div>
     </section>
 
 
@@ -159,14 +161,10 @@
         &copy; 2025 Alberto Sanchez
     </footer>
 
-    <!--script for doing date calculations-->
-    <script>
-        //for my art experience
-        const startYearArt = 2015;
-        const startYearAirForce = 2016;
-        const currentDate = new Date().getDate
-        document.getElementById('year')
-    </script>
+    <!--script for doing date calculations/updates-->
+    <script src="update_dates.js"></script>
+    <!--script to update long list of component knowledge-->
+    <script src="update_components_list"></script>
 
 </body>
 </html>

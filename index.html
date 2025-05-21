@@ -91,6 +91,21 @@
             border-radius: 8px;
             border: 1px solid #ccc;
         }
+        .container {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+        }
+        .box {
+            flex: 1;
+            padding: 15px;
+            background-color: white;
+            border-radius: 8px;
+        }
+        .box p{
+            white-space: pre-line;
+            line-height: 1.5;
+        }
         
     </style>
 </head>
@@ -99,11 +114,6 @@
         <img src="images/selfie.jpg" class="profile-image">
         <h1>Mochisun</h1>
         <p>Artist | Developer | Mechanic</p>
-        <p>
-          Find me on 
-          <a href="https://github.com/mochisun" target="_blank">GitHub</a> and 
-          <a href="https://linkedin.com/in/albertos1" target="_blank">LinkedIn</a>.
-        </p>
     </header>
 
     <!--ADD GITHUB AND LINKED IN LINKS (INDEED?)-->
@@ -141,16 +151,6 @@
             <p>A showcase of awesome recipes pulled from a flashdrive that my mom gifted me a while back</p>
             <a href="https://github.com/mochisun/FamilyRecipes" target="_blank">View on GitHub</a>
         </div>
-        <div class="project">
-            <h2>Small Python Scripting</h2>
-            <p>Testing out python scripting with a small game data set</p>
-            <a href="https://github.com/mochisun/Python-Scripting-Project-Games" target="_blank">View on GitHub</a>
-        </div>
-        <div class="project">
-            <h2>Movie Web App</h2>
-            <p>Trying to make a very simple movie cataloging/rating site</p>
-            <a href="https://github.com/mochisun/first-movie-app" target="_blank">View on GitHub</a>
-        </div>
     </section>
 
     <section class="mechanic">
@@ -166,9 +166,22 @@
             <img src="images/PEALD DCM.jpg" alt="PEALD DCM">
             <img src="images/F-35A.jpg" alt="F-35">
         </div> <br/>
-        <p>Component Knowledge/Operational Skills</p>
-        <!--list of all mechanical components I've picked up over the years-->
-        <div id="c"></div>
+        <p>Component Knowledge/Operational Skills:</p>
+        <!--list of all mechanical component skills I've picked up over the years-->
+        <div class="container">
+            <div class="box" >
+                <h3>Semiconductor Tools</h3>
+                <p id="semiTools"></p>
+            </div>
+            <div class="box" >
+                <h3>Avionics Tools</h3>
+                <p id="aviTools"></p>
+            </div>
+            <div class="box" >
+                <h3>Component Knowledge</h3>
+                <p id="compKnowledge"></p>
+            </div>
+        </div>
     </section>
 
 
@@ -179,7 +192,7 @@
     <!--script for doing date calculations/updates-->
     <script src="update_dates.js"></script>
     <!--script to update long list of component knowledge-->
-    <script src="update_components_list"></script>
+    <script src="update_components_list.js"></script>
 
 </body>
 </html>
